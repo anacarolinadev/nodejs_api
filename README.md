@@ -1,37 +1,34 @@
 <h3 align="center">Product API</h3>
 <p align="center">
-<a href="https://github.com/thatavieira/backend_challenge_products_api"><img alt="products_api" src="https://img.shields.io/badge/products__api-1.2.1-orange" /></a>
-<a href="https://pypi.org/"><img alt="fastApi" src="https://img.shields.io/badge/fastApi-0.75.1-green"/></a>
-<a href="https://pypi.org/"><img alt="uvicorn" src="https://img.shields.io/badge/uvicorn-0.17.6-red"/></a>
-<a href="https://pypi.org/"><img alt="SQLAchemy" src="https://img.shields.io/badge/SQLAchemy-1.4.36-9cf"/></a>
-<a href="https://pypi.org/"><img alt="psycopg2-binary" src="https://img.shields.io/badge/psycopg2--binary-2.9.3-yellow"/></a>
-<a href="https://pypi.org/"><img alt="fastApi-pagination" src="https://img.shields.io/badge/fastApi--pagination-0.9.3-blue"/></a>
-<a href="https://pypi.org/"><img alt="pydantic" src="https://img.shields.io/badge/pydantic-1.9.1-inactive"/></a></p>
+<a href="https://pypi.org/"><img alt="body-parser" src="https://img.shields.io/badge/body--parser-1.20.2-green"/></a>
+<a href="https://pypi.org/"><img alt="express" src="https://img.shields.io/badge/express-4.18.2-red"/></a>
+<a href="https://pypi.org/"><img alt="nodemon" src="https://img.shields.io/badge/nodemon-3.0.1-9cf"/></a>
+<a href="https://pypi.org/"><img alt="pg-promise" src="https://img.shields.io/badge/pg--promise-11.5.4-yellow"/></a>
 
 <p align="center">
-<img alt="logo" src="https://raw.githubusercontent.com/thatavieira/backend_challenge_products_api/developer/img/fast_api.png"/>
+<img alt="logo" src="https://raw.githubusercontent.com/anacarolinadev/nodejs_api/main/img/express.png"/>
 </p>
 
 
 # About The Project
 
-Project created for realize Challenge Backend Products Api, project which allows manipulate and relate products and categories.
+This project was created to solve <a href="https://honeysuckle-belly-aa2.notion.site/2-Backend-Challenge-Products-Api-2db797f303dd46db882d5967d5605cac" target="_blank">Challenge Backend Products Api</a>, a project that allows a user to manipulate and relate products and categories.
 
 * Mandatory requirements
     
-    1.User should be able of create, read, update and delete products.
+    1.A user should be able to create, read, update and delete products.
     
-    2.User should be able of create, read, update and delete categories.
+    2.A user should be able to create, read, update and delete categories.
 
     3.A product must be related to a category.
 
     4.A category must be related to one or more products.
 
-    5.Queries must return a maximum of 10 items by request.
+    5.Queries must return at least 10 items by request.
 
-    6.The product query should be able to return a specific product or all of them.
+    6.The product query should be able to return an specific product or all the products.
 
-    7.The category query must be able to return a specific category or all.
+    7.The category query must be able to return an specific category or all categories.
 
 
 Product output:
@@ -79,7 +76,7 @@ Category output:
 
 # Build With
 
-Follow list with any frameworks and libs used in building of the application.
+Frameworks and libs to build the application:
 
 *   Body-parser
 *   Express
@@ -87,9 +84,9 @@ Follow list with any frameworks and libs used in building of the application.
 
 # Getting Started
 
-To build and run the application, you need to install the dependencies below:
+To build and run the application, you need to follow the steps below:
 
-* Steps for configuration
+* Configuration steps
 
 1. Clone application
     
@@ -100,14 +97,11 @@ To build and run the application, you need to install the dependencies below:
 2. Creating Node Modules
 
     ```
-    npm init
-    ```
-3. Initializing Docker and installing PostgreSQL
-
-    ```
-    npm run docker
+    npm install
     ```
 
+3. Before starting the API, create .env file just like .env-sample file and configure it with the data you need.
+    
 4. Initializing API
 
     ```
@@ -118,12 +112,12 @@ Ps.: You must have PostgreSQL installed, if not you can use Docker as below.
 
 * Docker - Optional
 
-1. If you want to run the application in docker, configure the file docker-compose and after the command 
+1. Run the command below if you want to run the application in Docker 
 ```
  npm run docker
 ```
 
-2.Configure the environment variables for containers in `docker-compose.yml` file:
+2.Configure the environment variables of containers in `docker-compose.yml` file:
 
 #### docker-compose.yml
 ```
@@ -147,5 +141,4 @@ services:
 
 # Development
 
-API developed with Express, framework focused on API development.
-Pg-promise used to connect to PostgreSQL database.
+API developed with Express, and Pg-promise to connect PostgreSQL database.
